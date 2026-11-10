@@ -1,1 +1,360 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Océanos Hoy | ODS 14</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #123b4a;
+      background: #f0fbfc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      box-shadow: 0 3px 15px #123b4a12;
+    }
+
+    .logo {
+      color: #087e8b;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #174b5a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #08a6ad;
+    }
+
+    .hero {
+      min-height: 540px;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, #063b52e8, #063b5260),
+        url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ffffff25;
+      border: 1px solid #ffffff70;
+      padding: 7px 15px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #28c6bd;
+      color: #063b52;
+      padding: 13px 23px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 8px 5px 0;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .button.secondary {
+      background: white;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      color: #087e8b;
+      margin-bottom: 15px;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 22px #123b4a12;
+    }
+
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 23px;
+    }
+
+    .card h3 {
+      color: #087e8b;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      background: #d9f5f2;
+    }
+
+    .action-list {
+      max-width: 750px;
+      margin: 30px auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    .action {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      border-left: 5px solid #20b9b0;
+    }
+
+    .final {
+      text-align: center;
+      background: #07536a;
+      color: white;
+    }
+
+    .final h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .final .button {
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #063b52;
+      color: white;
+      font-size: 14px;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #f5b942;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 480px;
+        padding: 65px 7%;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🌊 Océanos Hoy</div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#problema">El problema</a>
+      <a href="#soluciones">Soluciones</a>
+      <a href="#acciones">Participa</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="tag">ODS 14 · Vida submarina</span>
+        <h1>El mar también necesita tu ayuda.</h1>
+        <p>
+          Los océanos hacen posible la vida en nuestro planeta.
+          Conocer sus problemas es el primer paso para protegerlos.
+          ¡Cada pequeña acción puede generar un gran cambio!
+        </p>
+        <a class="button" href="#acciones">Actúa ahora</a>
+        <a class="button secondary" href="#problema">Conoce el problema</a>
+      </div>
+    </section>
+
+    <section id="problema">
+      <h2 class="section-title">¿Qué está pasando con nuestros océanos?</h2>
+      <p class="section-intro">
+        La contaminación, el cambio climático y la sobrepesca
+        amenazan los ecosistemas marinos y a las especies que viven en ellos.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?auto=format&fit=crop&w=900&q=85"
+            alt="Residuos plásticos en el ambiente marino">
+          <div class="card-content">
+            <h3>Contaminación</h3>
+            <p>Los plásticos y otros residuos afectan la salud de los animales y los hábitats marinos.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=900&q=85"
+            alt="Arrecife de coral bajo el agua">
+          <div class="card-content">
+            <h3>Cambio climático</h3>
+            <p>El calentamiento y la acidificación del océano ponen en riesgo los arrecifes y la biodiversidad.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&w=900&q=85"
+            alt="Vida marina en el océano">
+          <div class="card-content">
+            <h3>Pérdida de biodiversidad</h3>
+            <p>La sobrepesca y la destrucción de hábitats amenazan a muchas especies marinas.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlight" id="soluciones">
+      <h2 class="section-title">El cambio comienza con soluciones</h2>
+      <p class="section-intro">
+        Proteger la vida submarina requiere educación, responsabilidad
+        y colaboración entre personas, comunidades y gobiernos.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-content">
+            <h3>♻️ Reducir residuos</h3>
+            <p>Evitar plásticos de un solo uso y separar correctamente la basura.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <h3>🐠 Proteger especies</h3>
+            <p>Respetar los ecosistemas y apoyar prácticas de pesca sostenible.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-content">
+            <h3>📚 Crear conciencia</h3>
+            <p>Compartir información y aprender sobre la importancia de los océanos.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="acciones">
+      <h2 class="section-title">¡Tú también puedes ayudar!</h2>
+      <p class="section-intro">
+        No necesitas hacer algo enorme para marcar la diferencia.
+        Comienza con acciones sencillas en tu vida diaria.
+      </p>
+
+      <div class="action-list">
+        <div class="action">🌱 Usa una botella reutilizable y evita productos desechables.</div>
+        <div class="action">🏖️ Mantén limpias las playas y no dejes residuos.</div>
+        <div class="action">💙 Comparte información sobre el cuidado del océano.</div>
+        <div class="action">🌎 Apoya iniciativas que protejan los ecosistemas marinos.</div>
+      </div>
+    </section>
+
+    <section class="final">
+      <h2>El futuro del océano también está en nuestras manos.</h2>
+      <p>Pequeñas decisiones pueden ayudar a construir un planeta más saludable.</p>
+      <a class="button" href="#inicio">Volver al inicio ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Océanos Hoy · Proyecto educativo · Objetivo de Desarrollo Sostenible 14</p>
+    <p>Protejamos la vida submarina. 🌊</p>
+  </footer>
+
+</body>
+</html>
